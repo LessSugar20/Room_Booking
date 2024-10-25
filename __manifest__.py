@@ -6,12 +6,13 @@
     'author': 'boy',
     'category': 'Operations',
     'website': 'https://www.odoo.com/app/invoicing',
-    'depends': ['base','mail'],
+    'depends': ['base'],
     'data': [
-        'views/room_booking_views.xml',
-        'views/master_ruangan_views.xml',
+        'security/ir.model.access.csv',
+        'data/room_sequence.xml',
+        'views/room_views.xml',
+        'views/booking_views.xml'
     ],
     'installable': True,
     'application': True,
-    'auto_install': False,
 }
